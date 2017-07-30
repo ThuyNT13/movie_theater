@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MovieTheater</title>
+    <title><%= head_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="flex-container">
+      <%= render 'layouts/header'%>
+      <%= render 'layouts/navbar'%>
+      <%= yield %>
+      <%= render 'layouts/footer'%>
+    </div>
   </body>
 </html>
