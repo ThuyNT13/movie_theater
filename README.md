@@ -1,5 +1,7 @@
 # README
 
+https://cinemix.herokuapp.com
+
 User
   has_many :tickets, foreign_key: :ticketholder_id
   has_many :ticketed_movies, through: :tickets, source: :movies
