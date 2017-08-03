@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString1
+  context: MyText1
+  showtime: 2017-08-02 19:30:55
+  screen: one
+
+two:
+  title: MyString2
+  context: MyText2
+  showtime: 2017-08-02 19:30:55
+  screen: two
