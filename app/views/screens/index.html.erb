@@ -1,2 +1,22 @@
-<h1>Screens#index</h1>
-<p>Find me in app/views/screens/index.html.erb</p>
+<% provide(:title, "Screens") %>
+
+<div class="article">
+<h1><%= yield(:title)%></h1>
+
+<table>
+  <tr>
+    <th>Screen No.</th>
+    <th>Capacity</th>
+  </tr>
+
+  <% @screens.each do |screen| %>
+    <tr>
+      <td><%= screen.room_no %></td>
+      <td><%= screen.capacity %></td>
+    </tr>
+  <% end %>
+
+</table>
+
+
+</div>
