@@ -2,8 +2,8 @@
 
 one:
   room_no: 1
-  capacity: 1
+  capacity: 50
 
 two:
-  room_no: 1
-  capacity: 1
+  room_no: 2
+  capacity: 100
