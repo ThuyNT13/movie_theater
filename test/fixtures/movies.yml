@@ -3,11 +3,11 @@
 one:
   title: MyString1
   context: MyText1
-  showtime: 2017-08-02 19:30:55
-  screen: one
+  showtime: 2017-09-02 19:30:00
+  screen: 1
 
 two:
   title: MyString2
   context: MyText2
-  showtime: 2017-08-02 19:30:55
-  screen: two
+  showtime: 2017-09-16 11:25:00
+  screen: 2
