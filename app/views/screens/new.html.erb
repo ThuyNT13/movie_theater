@@ -1,2 +1,13 @@
-<h1>Screens#new</h1>
-<p>Find me in app/views/screens/new.html.erb</p>
+<% provide(:title, 'Create screen') %>
+<% provide(:submit_btn, 'Save screen') %>
+
+<article class="article">
+
+
+<h1><%= yield(:title) %></h1>
+
+<div>
+  <%= render 'form' %>
+</div>
+
+</article>

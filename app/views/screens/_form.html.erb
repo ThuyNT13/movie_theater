@@ -1,0 +1,16 @@
+<div class="article">
+  <%= form_for @screen do |f| %>
+    <%= render 'errors' %>
+    <p>
+      <%= f.label :room_no %>
+      <%= f.number_field :room_no %>
+      <p>
+    </p>
+      <%= f.label :capacity %>
+      <%= f.number_field :capacity %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>

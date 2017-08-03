@@ -1,2 +1,10 @@
-<h1>Screens#edit</h1>
-<p>Find me in app/views/screens/edit.html.erb</p>
+<% provide(:title, 'Edit screen') %>
+<% provide(:submit_btn, 'Save changes') %>
+
+
+<article class="article">
+  <h1><%= yield(:title)%></h1>
+  <div>
+    <%= render 'form' %>
+  </div>
+</article>
