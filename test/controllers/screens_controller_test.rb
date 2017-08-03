@@ -37,9 +37,9 @@ class ScreensControllerTest < ActionDispatch::IntegrationTest
     # TODO
   end
 
-  test "should delete" do
-    assert_difference('Screen.count') do
-      delete screens_path(@screen) #FIXME
+  test "should delete screen" do
+    assert_difference('Screen.count', -1) do
+      delete screen_path(@screen)
     end
     assert_redirected_to screens_path
   end
