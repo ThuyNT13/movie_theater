@@ -12,5 +12,7 @@ deploy:
 install:
   - gem install bundler --version '1.15.3'
 
-
 dist: precise
+
+script:
+  - bundle exec rake db:test:prepare
