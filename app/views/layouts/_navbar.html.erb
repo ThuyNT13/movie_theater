@@ -1,7 +1,7 @@
 <nav class="nav">
 <ul>
-  <li><a href="#">Mad Monster Party</a></li>
-  <li><a href="#">La Jetée</a></li>
-  <li><a href="#">Tampopo</a></li>
+  <% @screen.movies.each do |movie| %>
+    <li><%= link_to movie.title, screen_movie_path(@screen, movie) %></li>
+  <% end %>
 </ul>
 </nav>
