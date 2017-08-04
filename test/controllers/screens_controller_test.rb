@@ -23,7 +23,8 @@ class ScreensControllerTest < ActionDispatch::IntegrationTest
   test "should create screen" do
     assert_difference('Screen.count') do
       post screens_path, params: { screen: {
-        room_no: @screen.room_no, capacity: @screen.capacity }}
+        room_no: @screen.room_no,
+        capacity: @screen.capacity }}
     end
     assert_redirected_to screen_path(Screen.last)
   end
@@ -34,7 +35,12 @@ class ScreensControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update screen" do
-    # TODO
+    assert_no_difference('Screen.count') do
+      patch screen_path(@screen), params: { screen: {
+        room_no: @screen.room_no,
+        capacity: @screen.capacity } }
+    end
+    assert_redirected_to screen_path(@screen)
   end
 
   test "should delete screen" do
