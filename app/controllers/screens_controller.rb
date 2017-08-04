@@ -34,7 +34,7 @@ class ScreensController < ApplicationController
 
   def destroy
     @screen.destroy
-    redirect_to screens_path
+    redirect_to screens_url
   end
 
   private

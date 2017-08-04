@@ -1,0 +1,18 @@
+<div>
+
+<% if @movie.errors.any? %>
+  <div>
+    <h2>
+      <%= pluralize(@movie.errors.count, "error") %> prohibited
+      this article from being saved:
+    </h2>
+
+    <ul>
+      <% @movie.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+</div>

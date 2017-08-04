@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-
-resources :screens
+resources :screens do
+  resources :movies
+end
 
 get '/home', to: 'pages#home'
 
