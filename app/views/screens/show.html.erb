@@ -16,4 +16,5 @@
   <p><%= link_to "Delete Screen", screen_path(@screen),
     method: :delete,
     data: { confirm: 'You are also deleting all the movies. Are you sure?' } %></p>
+  <p><%= link_to 'Add a movie', new_screen_movie_path(@screen)%></p>
 </div>

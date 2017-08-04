@@ -11,7 +11,7 @@
 
   <% @screens.each do |screen| %>
     <tr>
-      <td><%= screen.room_no %></td>
+      <td><%= link_to screen.room_no, screen_path(screen) %></td>
       <td><%= screen.capacity %></td>
     </tr>
   <% end %>

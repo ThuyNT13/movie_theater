@@ -6,6 +6,6 @@ end
 
 get '/home', to: 'pages#home'
 
-root 'pages#home'
+root 'screens#index'
 
 end
