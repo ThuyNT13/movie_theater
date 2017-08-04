@@ -4,4 +4,9 @@
   <h1><%= @movie.title %></h1>
   <p><%= @movie.context %></p>
   <p><strong><%= @movie.showtime %></strong></p>
+
+  <p><%= link_to "Update movie", edit_screen_movie_path(@screen,@movie)%></p>
+  <p><%= link_to "Delete movie", screen_movie_path(@screen, @movie),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %></p>
 </article>

@@ -2,10 +2,10 @@
 
 <% if @movie.errors.any? %>
   <div>
-    <h2>
+    <h3>
       <%= pluralize(@movie.errors.count, "error") %> prohibited
       this article from being saved:
-    </h2>
+    </h3>
 
     <ul>
       <% @movie.errors.full_messages.each do |msg| %>

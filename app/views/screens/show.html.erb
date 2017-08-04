@@ -1,6 +1,19 @@
 <% provide(:title, @screen.room_no) %>
 
 <div class="article">
-  <h1>Room no: <%= @screen.room_no %></h1>
-  <h1>Capacity: <%= @screen.capacity %></h1>
+  <h2>Room no: <%= @screen.room_no %></h2>
+  <h2>Capacity: <%= @screen.capacity %></h2>
+
+  <div>
+    <ul>
+      <% @screen.movies.each do |movie| %>
+        <li><%= link_to movie.title, screen_movie_path(@screen, movie) %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <p><%= link_to "Update Screen", edit_screen_path(@screen) %></p>
+  <p><%= link_to "Delete Screen", screen_path(@screen),
+    method: :delete,
+    data: { confirm: 'You are also deleting all the movies. Are you sure?' } %></p>
 </div>

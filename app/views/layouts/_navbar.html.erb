@@ -1,7 +1,14 @@
 <nav class="nav">
-<ul>
-  <% @screen.movies.each do |movie| %>
-    <li><%= link_to movie.title, screen_movie_path(@screen, movie) %></li>
-  <% end %>
-</ul>
+  <h3>Movies playing</h3>
+  <!-- TODO troubleshoot undefined method `movies' for nil:NilClass for dynamic movie list -->
+  <ul>
+    <li><a href="#">Mad Monster Party</a></li>
+    <li><a href="#">La Jetée</a></li>
+    <li><a href="#">Tampopo</a></li>
+  </ul>
+
+  <ul>
+
+  </ul>
+
 </nav>
