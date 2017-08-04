@@ -37,7 +37,7 @@ TicketSale
   belongs_to :movie
 ```
 
-I have also included a visual schema to help clarify how I perceived the different parts relating to each other: [schema](https://github.com/ThuyNT13/movie_theater/theater_schema.png)
+I have also included a visual schema to help clarify how I perceived the different parts relating to each other: [schema](https://github.com/ThuyNT13/movie_theater/blob/master/theater_schema.png)
 
 ---
 
