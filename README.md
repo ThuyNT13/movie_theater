@@ -1,6 +1,6 @@
 # README
 
-https://cinemix.herokuapp.com
+[![Build Status](https://travis-ci.org/ThuyNT13/movie_theater.svg?branch=master)](https://travis-ci.org/ThuyNT13/movie_theater)
 
 Presently, I have set up a basic movie listing so that anybody can view or manipulate the database, adding or updating movies or screens.
 
