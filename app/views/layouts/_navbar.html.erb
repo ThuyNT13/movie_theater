@@ -1,14 +1,11 @@
 <nav class="nav">
   <h3>Movies playing</h3>
-  <!-- TODO troubleshoot undefined method `movies' for nil:NilClass for dynamic movie list -->
-  <ul>
-    <li><a href="#">Mad Monster Party</a></li>
-    <li><a href="#">La Jetée</a></li>
-    <li><a href="#">Tampopo</a></li>
-  </ul>
+  <!-- FIXME link_to error missing required keys: [:screen_id] -->
 
   <ul>
-
+    <% Movie.all.each do |movie| %>
+      <li><%= movie.title %></li>
+    <% end %>
   </ul>
 
 </nav>
