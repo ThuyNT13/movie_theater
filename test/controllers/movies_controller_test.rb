@@ -16,18 +16,18 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
-    # get screen_new_movie_path
-    # assert_response :success
+    get new_screen_movie_path(@screen)
+    assert_response :success
   end
 
   test "should get edit" do
-    # get screen_edit_movie_path
-    # assert_response :success
+    get edit_screen_movie_path(@screen, @movie)
+    assert_response :success
   end
 
   test "should get show" do
-    # get screen_movie_url(@movie)
-    # assert_response :success
+    get screen_movie_url(@screen, @movie)
+    assert_response :success
   end
 
 end
