@@ -1,8 +1,5 @@
 language: ruby
 
-cache:
-  - bundler
-
 rvm:
   - 2.2
 
@@ -12,8 +9,5 @@ deploy:
 
 install:
   - gem install bundler --version '1.15.3'
-
-script:
-  - bundle exec script/test
 
 dist: precise
