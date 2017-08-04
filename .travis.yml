@@ -1,12 +1,11 @@
 language: ruby
 
 rvm:
-  - 2.2
+  - 2.3.3
 
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
 
 install:
-  - gem uninstall bundler
   - gem install bundler --version '1.15.3'
