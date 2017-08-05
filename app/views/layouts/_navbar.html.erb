@@ -8,4 +8,12 @@
     <% end %>
   </ul>
 
+  <h3>Screens</h3>
+
+  <ul>
+    <% Screen.all.each do |screen| %>
+      <li># <%= link_to screen.room_no, screen_path(screen) %></li>
+    <% end %>
+  </ul>
+
 </nav>
