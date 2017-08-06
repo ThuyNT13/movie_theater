@@ -1,23 +1,18 @@
 <% provide(:title, "Screens") %>
 
 <div class="article">
-<h1><%= yield(:title)%></h1>
-
-<table>
-  <tr>
-    <th>Screen No.</th>
-    <th>Capacity</th>
-  </tr>
-
-  <% @screens.each do |screen| %>
+  <h1><%= yield(:title)%></h1>
+  <table>
     <tr>
-      <td><%= link_to screen.room_no, screen_path(screen) %></td>
-      <td><%= screen.capacity %></td>
+      <th>Screen No.</th>
+      <th>Capacity</th>
     </tr>
-  <% end %>
-
-</table>
-
-<p><%= link_to "Add a screen", new_screen_path %></p>
-
+    <% @screens.each do |screen| %>
+      <tr>
+        <td><%= link_to screen.room_no, screen_path(screen) %></td>
+        <td><%= screen.capacity %></td>
+      </tr>
+    <% end %>
+  </table>
+  <p><%= link_to "Add a screen", new_screen_path %></p>
 </div>
