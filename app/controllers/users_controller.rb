@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      flash[:success] = "Welcome!"
       redirect_to @user
     else
       render 'new'
@@ -22,6 +23,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
+      flash[:success] = "Profile updated."
       redirect_to @user
     else
       render 'edit'
@@ -30,6 +32,7 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
+    flash[:success] = "User deleted."
     redirect_to root_url
   end
 
