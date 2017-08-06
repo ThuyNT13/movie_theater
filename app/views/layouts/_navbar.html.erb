@@ -12,7 +12,7 @@
 
   <ul>
     <% Screen.all.each do |screen| %>
-      <li># <%= link_to screen.room_no, screen_path(screen) %></li>
+      <li><%= link_to "# #{screen.room_no}", screen_path(screen) %></li>
     <% end %>
   </ul>
 

@@ -9,4 +9,5 @@
   <p><%= link_to "Delete movie", screen_movie_path(@screen, @movie),
     method: :delete,
     data: { confirm: 'Are you sure?' } %></p>
+  <p><%= link_to "Back to Screen #{@screen.room_no}", screen_path(@screen)%></p>
 </article>
