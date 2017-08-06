@@ -3,3 +3,4 @@ class Movie < ApplicationRecord
 
   validates :title, :context, :showtime, presence: true
 end
+  
