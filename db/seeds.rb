@@ -1,3 +1,5 @@
+user1 = User.create(username:"tweester", email:"tweester@email.com", password:"password")
+
 s1 = Screen.create(room_no:1, capacity:75)
 s2 = Screen.create(room_no:2, capacity:150)
 s3 = Screen.create(room_no:3, capacity:300)
