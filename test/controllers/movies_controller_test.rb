@@ -22,7 +22,7 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
 
 
   test "should create movie" do
-    # TODO write test for movies#create movies#update
+    # TODO write test for movies#create
     # assert_difference('Movie.count') do
     #   post screen_movies_path, params: { screen: {
     #     room_no: @screen.room_no,
@@ -39,6 +39,10 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
   test "should get edit" do
     get edit_screen_movie_path(@screen, @movie)
     assert_response :success
+  end
+
+  test "should update move" do
+    # TODO write test for movies#update
   end
 
 end
