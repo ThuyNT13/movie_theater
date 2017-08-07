@@ -2,8 +2,11 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  # Allow to test for logged_in user as helper methods aren't available in tests, so current_user is unavailable
+  # use session to establish this
+  def is_logged_in?
+    !session[:user_id].nil?
+  end
 end
