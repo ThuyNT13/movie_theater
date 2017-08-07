@@ -13,11 +13,13 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
   test "should get show" do
     get screen_movie_path(@screen, @movie)
     assert_response :success
+    assert_select "title", "CineMix - #{@movie.title}"
   end
 
   test "should get new" do
     get new_screen_movie_path(@screen)
     assert_response :success
+    assert_select "title", "CineMix - Add movie"
   end
 
 
@@ -39,6 +41,7 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
   test "should get edit" do
     get edit_screen_movie_path(@screen, @movie)
     assert_response :success
+    assert_select "title", "CineMix - Edit movie"
   end
 
   test "should update move" do

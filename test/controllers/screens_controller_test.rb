@@ -8,16 +8,19 @@ class ScreensControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get screens_path
     assert_response :success
+    assert_select "title", "CineMix - Screens"
   end
 
   test "should get show" do
     get screen_path(@screen)
     assert_response :success
+    assert_select "title", "CineMix - #{@screen.room_no}"
   end
 
   test "should get new" do
     get new_screen_path
     assert_response :success
+    assert_select "title", "CineMix - Add screen"
   end
 
   test "should create screen" do
@@ -32,6 +35,7 @@ class ScreensControllerTest < ActionDispatch::IntegrationTest
   test "should get edit" do
     get edit_screen_path(@screen)
     assert_response :success
+    assert_select "title", "CineMix - Edit screen"
   end
 
   test "should update screen" do
