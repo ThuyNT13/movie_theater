@@ -3,16 +3,9 @@
   <ul>
     <li><%= link_to 'Home', root_path %></li>
     <% if logged_in? %>
-      <li><%= link_to 'Log out', logout_path %></li>
+      <li><%= link_to 'Log out', logout_path, method: :delete %></li>
     <% else %>
       <li><%= link_to 'Log in', login_path %></li>
-    <% end %>
-  </ul>
-
-  <h3>Movies playing</h3>
-  <ul>
-    <% Movie.all.each do |movie| %>
-      <li><%= link_to movie.title, screen_movie_path(movie.screen, movie) %></li>
     <% end %>
   </ul>
 
