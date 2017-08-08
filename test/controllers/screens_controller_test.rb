@@ -20,7 +20,7 @@ class ScreensControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
     get new_screen_path
     assert_response :success
-    assert_select "title", "CineMix - Add screen"
+    assert_select "title", "CineMix - Create screen"
   end
 
   test "should create screen" do
