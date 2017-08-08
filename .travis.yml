@@ -11,6 +11,7 @@ deploy:
 
 install:
   - gem install bundler --version '1.15.3'
+  - bundle install
 
 dist: precise
 
