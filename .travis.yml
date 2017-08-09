@@ -8,6 +8,7 @@ rvm:
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
+  app: cinemix
 
 install:
   - gem install bundler --version '1.15.3'
