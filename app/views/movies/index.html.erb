@@ -1,0 +1,20 @@
+<% provide(:title, 'Movies') %>
+
+<div class='article'>
+  <h1><%= yield(:title) %></h1>
+
+  <table>
+    <tr>
+      <th>Screen No.</th>
+      <th>Title</th>
+      <th>Time</th>
+    </tr>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= movie.screen.room_no %></td>
+        <td><%= link_to movie.title, screen_movie_path(movie.screen, movie) %></td>
+        <td><%= movie.showtime %></td>
+      </tr>
+    <% end  %>
+  </table>
+</div>
